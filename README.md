@@ -18,9 +18,10 @@ cloudflare R2是一个文件储存系统，配合Cloudflare Workers可以实现�
 3. 前往Cloudflare Pages新建一个站点，选择连接到Git
 
 4.选择刚刚fork的仓库，点击开始设置
+
 5.项目名称可以修改，其他项目保持默认不动
 
-6.展开环境变量，添加
+6.添加环境变量
 
 | 变量名称| 值|
 | --- | --- |
@@ -40,6 +41,6 @@ user1:123456 user1/,userPublic/ # 这个变量可以忽略，不用添加
 
 设置好后点击**开始部署**
 
-7.前往Pages->cloudflare-r2-oss->设置->函数->R2 存储桶绑定,绑定R2存储桶,变量名称`BUCKET`
+7.前往Pages->cloudflare-r2-oss->设置->函数->R2 存储桶绑定,绑定R2存储桶,变量名称必须为`BUCKET`
 
 8.在部署页面重新部署即可
